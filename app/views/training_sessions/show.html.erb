@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @training_session.date %>
+</p>
+
+<p>
+  <strong>Planned distance:</strong>
+  <%= @training_session.planned_distance %>
+</p>
+
+<p>
+  <strong>Actual distance:</strong>
+  <%= @training_session.actual_distance %>
+</p>
+
+<p>
+  <strong>Instructions:</strong>
+  <%= @training_session.instructions %>
+</p>
+
+<p>
+  <strong>Athletes notes:</strong>
+  <%= @training_session.athletes_notes %>
+</p>
+
+<p>
+  <strong>Coaches notes:</strong>
+  <%= @training_session.coaches_notes %>
+</p>
+
+<%= link_to 'Edit', edit_training_session_path(@training_session) %> |
+<%= link_to 'Back', training_sessions_path %>
